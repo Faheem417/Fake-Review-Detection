@@ -38,7 +38,7 @@ Online platforms are filled with fake or manipulated reviews, which mislead buye
 
 - Format: CSV file with `Review` and `Label` columns
 - Labels: `1` = Fake Review, `0` = Genuine Review
-- Source: [Add your Kaggle dataset link here]
+- Source: https://www.kaggle.com/datasets/devmaster347/fake-review-detection-systemamtl
 
 ---
 
