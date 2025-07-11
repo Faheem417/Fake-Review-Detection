@@ -1,14 +1,12 @@
-### 🔒 Trained Model File
-- `Fake_Review_Detection_Portfolio_Polished_v2.pkl`: Trained RandomForest model for fake review detection.
-# 🕵️ Fake Review Detection Using Machine Learning
+# 🕵️‍♂️ Fake Review Detection Using Machine Learning
 
-This project detects **fake online reviews** using various Natural Language Processing (NLP) and machine learning techniques. It aims to help platforms and users filter out misleading reviews and identify genuine ones.
+This project identifies **fake online reviews** using Natural Language Processing (NLP) and machine learning techniques. It helps detect and filter misleading customer reviews automatically.
 
 ---
 
 ## 📌 Problem Statement
 
-With the rise in online shopping and digital platforms, **fake reviews** have become a major concern. This project uses **text classification** to identify and filter out fake reviews from genuine ones.
+Online platforms are filled with fake or manipulated reviews, which mislead buyers and hurt genuine businesses. This project builds a machine learning model to **detect and classify reviews** as fake or real based on text features.
 
 ---
 
@@ -16,10 +14,31 @@ With the rise in online shopping and digital platforms, **fake reviews** have be
 
 - TF-IDF Vectorization
 - Logistic Regression
-- Naive Bayes Classifier
 - Random Forest
+- Naive Bayes
 - Support Vector Machine (SVM)
-- XGBoost (if used)
+- XGBoost (optional)
+
+---
+
+## 📊 Model Results
+
+| Metric      | Score   |
+|-------------|---------|
+| Accuracy    | 94.2%   |
+| Precision   | 92.5%   |
+| Recall      | 91.0%   |
+| F1-Score    | 91.7%   |
+
+✅ These results may vary based on the dataset split and tuning.
+
+---
+
+## 📁 Dataset Info
+
+- Format: CSV file with `Review` and `Label` columns
+- Labels: `1` = Fake Review, `0` = Genuine Review
+- Source: [Add your Kaggle dataset link here]
 
 ---
 
@@ -27,55 +46,41 @@ With the rise in online shopping and digital platforms, **fake reviews** have be
 
 ```bash
 Fake-Review-Detection/
-│
-├── Fake_Review_Detection.ipynb        # Main Jupyter notebook
-├── Fake_Review_Detection_Portfolio_Polished_v2.pkl  # Trained ML model
-├── output.png                         # Screenshot of final result (rename as needed)
-├── confusion_matrix.png               # Confusion Matrix image
-├── accuracy_plot.png                  # Accuracy Curve image
-└── README.md                          # This file
-📊 Model Results
-Metric	Score
-Accuracy	94.2%
-Precision	92.5%
-Recall	91.0%
-F1-Score	91.7%
-
-Note: These scores may vary based on the model and dataset used.
-
-🖼️ Model Output Visuals
-📌 Confusion Matrix
+├── Fake_Review_Detection.ipynb              # Main Notebook
+├── Fake_Review_Detection_Portfolio_Polished_v2.pkl  # Trained Model
+├── output.png                               # Model Prediction Screenshot
+├── confusion_matrix.png                     # Confusion Matrix Plot
+├── accuracy_plot.png                        # Accuracy Visualization
+└── README.md                                # Project Description File
+🖼️ Screenshots & Visuals
+🔍 Confusion Matrix
 
 📈 Accuracy Curve
 
-✅ Final Output
+✅ Final Output Screenshot
 
 
-📁 Dataset Info
-Source: Add your Kaggle dataset link here
-
-Format: CSV file with columns like Review, Label (Fake or Real)
-
-📦 Libraries Used
+🔧 Libraries Used
 pandas
 
 numpy
 
 scikit-learn
 
-matplotlib / seaborn
+matplotlib, seaborn
 
 nltk
 
 xgboost (optional)
 
+🚀 Future Improvements
+Add deep learning models (BERT, LSTM)
+
+Create web dashboard using Streamlit or Flask
+
+Use real-time review scraping
+
 👤 Author
 Abdul Faheem
 GitHub: @Faheem417
 
-🚀 Future Work
-Improve model using BERT or LSTM (deep learning)
-
-Deploy the model using Flask / Streamlit
-
-Create a live web app for public testing
